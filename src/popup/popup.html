@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FormFlow</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>FormFlow</h1>
+    <div class="section">
+      <h2>CSVファイルの読み込み</h2>
+      <input type="file" id="csvFile" accept=".csv">
+      <div id="fileInfo" class="info-box"></div>
+    </div>
+
+    <div class="section">
+      <h2>フォーム入力情報</h2>
+      <div class="form-group">
+        <label for="nameField">氏名:</label>
+        <input type="text" id="nameField" placeholder="山田 太郎">
+      </div>
+      <div class="form-group">
+        <label for="emailField">メールアドレス:</label>
+        <input type="email" id="emailField" placeholder="example@email.com">
+      </div>
+      <div class="form-group">
+        <label for="phoneField">電話番号:</label>
+        <input type="tel" id="phoneField" placeholder="090-1234-5678">
+      </div>
+      <div class="form-group">
+        <label for="messageField">営業文:</label>
+        <textarea id="messageField" rows="3" placeholder="お問い合わせ内容を入力してください"></textarea>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>処理範囲の指定</h2>
+      <div class="form-group">
+        <label for="rangeField">処理範囲 (例: 1-10, 15, 20-25):</label>
+        <input type="text" id="rangeField" placeholder="例: 1-10, 15, 20-25">
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>実行</h2>
+      <button id="startButton" class="action-button">処理開始</button>
+      <button id="stopButton" class="action-button" disabled>処理停止</button>
+    </div>
+
+    <div class="section">
+      <h2>処理状況</h2>
+      <div id="progressInfo" class="info-box">
+        <div>処理状況: <span id="status">停止中</span></div>
+        <div>処理中のURL: <span id="currentUrl">-</span></div>
+        <div>進捗: <span id="progress">0/0</span></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>エラーレポート</h2>
+      <div id="errorReport" class="info-box error-box">
+        <ul id="errorList"></ul>
+      </div>
+    </div>
+  </div>
+  <script src="../popup.js"></script>
+</body>
+
+</html>

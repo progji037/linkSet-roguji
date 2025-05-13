@@ -1,0 +1,115 @@
+body {
+  font-family: 'Meiryo', 'Hiragino Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 400px;
+  padding: 15px;
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+h2 {
+  color: #34495e;
+  font-size: 16px;
+  margin: 10px 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.section {
+  background-color: white;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.action-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.action-button:hover {
+  background-color: #2980b9;
+}
+
+.action-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+#stopButton {
+  background-color: #e74c3c;
+}
+
+#stopButton:hover {
+  background-color: #c0392b;
+}
+
+.info-box {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.error-box {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+#errorList {
+  margin: 0;
+  padding-left: 20px;
+}
+
+#errorList li {
+  margin-bottom: 5px;
+  color: #e74c3c;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 60px;
+}
